@@ -30,7 +30,7 @@ export default function Task({
           name="title"
           id={`title-${id}`}
           placeholder="Input title"
-          style={{ backgroundColor: "red" }}
+          style={{ textOverflow: "ellipsis" }}
         />
       </label>
 
@@ -48,6 +48,7 @@ export default function Task({
     </div>
   );
 }
+
 Task.propTypes = {
   /** Composition of the task */
   task: PropTypes.shape({
